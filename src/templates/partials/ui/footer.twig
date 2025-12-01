@@ -1,0 +1,63 @@
+<footer class='footer'>
+  <a class='footer__logo' href='{{ footer.href }}'>
+    <img
+      class='footer__image'
+      src='{{ footer.logo_href }}'
+      alt='{{ footer.logo_alt }}'
+    >
+  </a>
+
+  <p class='footer__description'>
+    {{ footer.footer_description }}
+  </p>
+
+  {% for section in sections %}
+    <h4 class='footer__title'>{{ section.title }}</h4>
+    <nav class='footer-navigation'>
+      <ul class='footer-navigation__list'>
+        {% for link in section.links %}
+          <li class='footer-navigation__list-item'>
+            <a class='footer-navigation__list-link' href='#'>{{ link }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endfor %}
+
+  {% for link in bottomLinks %}
+    <a class='footer-navigation__link' href='#'>{{ link }}</a>
+  {% endfor %}
+
+  <div class='copyrights'>
+    <p class='copyrights__text'>{{ copyright.text }}</p>
+  </div>
+
+  <ul class='footer__social-list'>
+    {% for social in socials %}
+      <li class='footer__social-item'>
+        <a class='footer__Social-link' href='{{ social.link }}'>
+          <img class='footer__social-image' src='{{ social.icon }}' alt='{{ social.name }} logo'>
+          {{ social.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h4 class='footer__form'>{{ newsletter.title }}</h4>
+
+  <div class='footer__actions'>
+    <form class='footer__search'>
+      <input
+        class='footer__search-bar'
+        type='search'
+        name='{{ newsletter.form.inputName }}'
+      >
+    </form>
+    <a
+      class='banner__button button button--primary'
+      href='{{ newsletter.form.buttonLink }}'
+    >
+      {{ newsletter.form.buttonText }}
+    </a>
+  </div>
+</footer>

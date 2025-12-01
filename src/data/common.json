@@ -1,0 +1,122 @@
+{
+  "common": {
+    "siteTitle": "Pixmart"
+  },
+
+  "page": "index.html",
+  "index": {
+    "navigation": [
+      { "title": "About", "link": "#" },
+      { "title": "Products", "link": "#" },
+      { "title": "Creators", "link": "#" },
+      { "title": "Blog", "link": "#" },
+      { "title": "Contact", "link": "#" }
+    ]
+  },
+  "header": {
+    "href": "index.html",
+    "logo_href": "",
+    "text": "Pixmart",
+    "logo_alt": "Pixmart logo"
+  },
+
+  "headerSearch": {
+    "headerPlaceholder": "Search",
+    "headerIcon": ""
+  },
+
+  "headerButtons": [
+    {
+      "class": "button",
+      "value": "Shop Now",
+      "palette": "primary",
+      "href": "#",
+      "icon": "",
+      "icon_alt": "Shop icon",
+      "text": "Shop Now",
+      "type": "Shop Now"
+    },
+
+    {
+      "class": "button",
+      "value": "Watch",
+      "palette": "secondary",
+      "href": "#",
+      "icon": "",
+      "icon_alt": "Watch",
+      "text": "Watch About Us",
+      "type": "Watch About Us"
+    }
+  ],
+  "footer": {
+    "href": "index.html",
+    "logo_href": "",
+    "logo_alt": " Pixmart logo",
+    "footer_description": " Your premium digital assets solution with high quality and comprehensive range of products and services."
+  },
+
+  "sections": [
+    {
+      "title": "Company",
+      "links": [
+        "Homepage v1",
+        "Homepage v2",
+        "Homepage v3",
+        "About Us",
+        "About Us",
+        "Blog Articles"
+      ]
+    },
+    {
+      "title": "Products",
+      "links": [
+        "Website",
+        "Mobile App",
+        "Social Media Feeds",
+        "Presentation",
+        "Product Mockups",
+        "Illustrations"
+      ]
+    },
+    {
+      "title": "Account",
+      "links": [
+        "Your Cart",
+        "Check Out",
+        "Refund Policy",
+        "Company Policy",
+        "Send A Message",
+        "Customer Support"
+      ]
+    }
+  ],
+  "bottomLinks": ["Privacy Policy", "Terms and Condition", "Site Map"],
+  "copyright": {
+    "text": "Copyright © 2024 Pixmart. All rights reserved."
+  },
+  "socials": [
+    {
+      "name": "Twitter",
+      "icon": "#",
+      "link": "#"
+    },
+    {
+      "name": "Facebook",
+      "icon": "#",
+      "link": "#"
+    },
+    {
+      "name": "Telegram",
+      "icon": "#",
+      "link": "#"
+    }
+  ],
+  "newsletter": {
+    "title": "Subscribe to Design Newsletter",
+    "form": {
+      "inputName": "search",
+      "buttonText": "Subscribe",
+      "buttonLink": "#"
+    }
+  }
+}

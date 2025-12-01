@@ -1,0 +1,9 @@
+<nav class='header__navigation'>
+  <ul class='header__navigation-list'>
+    {% for item in index.navigation %}
+      <li class='header__navigation-item{% if loop.first %} header__navigation-item--active{% endif %}'>
+        <a class='header__navigation-link' href='{{ item.link }}'>{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
