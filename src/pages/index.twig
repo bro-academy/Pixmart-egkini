@@ -1,8 +1,15 @@
+{% set currentPage = "Home" %}
 {% extends 'src/templates/layouts/base.twig' %}
-
+{%
+  set title =
+  "Pixmart"
+%}
 
 {% block content %}
-  <h1>{{ index.title }}</h1>
-
-  {% include 'src/templates/partials/welcome-section.twig' %}
+  {% include 'src/templates/partials/ui/banner.twig' %}
+  {% include 'src/templates/partials/ui/catalog-section.twig' %}
+  {% include 'src/templates/partials/ui/blog-section.twig' %}
+  {% include 'src/templates/partials/ui/product-section.twig' %}
+  {% include 'src/templates/partials/ui/product-plans.twig' %}
+  {% include 'src/templates/partials/ui/faq.twig' %}
 {% endblock %}

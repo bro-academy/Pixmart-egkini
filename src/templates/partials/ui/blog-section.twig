@@ -1,0 +1,26 @@
+<section class='blog'>
+  <article class='blog__article'>
+    <p class='blog__category'>{{ blogIntro.category }}</p>
+    <h2 class='blog__title'>{{ blogIntro.title }}</h2>
+    <p class='blog__subtitle'>{{ blogIntro.subtitle }}</p>
+
+    <a
+      class='blog__button button button--primary'
+      href='{{ blogIntro.button.url }}'
+    >
+    </a>
+  </article>
+  {% for card in blogHighlights %}
+    <article class='blog-card'>
+      <img
+        class='blog-card__image'
+        src='{{ card.image_src }}'
+        alt='{{ card.image_alt }}'
+      >
+      <h3 class='blog-card__title'>{{ card.title }}</h3>
+      {% for tag in card.tags %}
+        <p class='blog-card__text'>{{ tag }}</p>
+      {% endfor %}
+    </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,23 @@
+@use "../base/variables.scss" as *;
+
+.banner {
+  &__section-title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
+    letter-spacing: $ls-xs;
+  }
+
+  &__section-brand {
+    color: $Accent-Link;
+  }
+
+  &__section-description {
+    font-family: $ff-heading;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-lg;
+    color: $Secondary;
+  }
+}

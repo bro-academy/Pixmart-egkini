@@ -1,0 +1,40 @@
+<div class='catalog__controls'>
+  <button class='catalog__button button'>
+    <img
+      class='catalog__button-image'
+      src='{{ catalogControls.prev_icon_src }}'
+      alt='{{ catalogControls.prev_icon_alt }}'
+    >
+  </button>
+  <button class='catalog__button button'>
+    <img
+      class='catalog__button-image'
+      src='{{ catalogControls.next_icon_src }}'
+      alt='{{ catalogControls.next_icon_alt }}'
+    >
+  </button>
+</div>
+
+<p class='catalog__trends'>{{ trending.label }}</p>
+<h3 class='catalog__title'>{{ trending.title }}</h3>
+<ul class='catalog__list'>
+  <li class='catalog__list-item'>
+    {% for product in trending.items %}
+      <article class='catalog-card'>
+        {% if product.label %}
+          <span class='catalog-card__label'>{{ product.label }}</span>
+        {% endif %}
+        <img
+          class='catalog-card__image'
+          src='{{ product.image_src }}'
+          alt='{{ product.image_alt }}'
+        >
+        <p class='catalog-card__value'>{{ product.price }}</p>
+        <p class='catalog-card__name'>{{ product.name }}</p>
+        {% for tag in product.tags %}
+          <p class='catalog-card__sub'>{{ tag }}</p>
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </li>
+</ul>

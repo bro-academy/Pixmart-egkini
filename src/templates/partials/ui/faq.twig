@@ -1,0 +1,23 @@
+<section class='faqs'>
+  <p class='faqs__header'>{{ faqs.header }}</p>
+  <h2 class='faqs__title'>{{ faqs.title }}</h2>
+  <a
+    class='banner__button button button--secondary'
+    href='{{ faqs.cta.url }}'
+  >
+    {{ faqs.cta.label }}
+  </a>
+
+  {% for faq in faqs.items %}
+    <details class='faqs__item'>
+      <summary class='faqs__question'>
+        {{ faq.question }}
+      </summary>
+      {% if faq.answer %}
+        <p class='faqs__answer'>
+          {{ faq.answer }}
+        </p>
+      {% endif %}
+    </details>
+  {% endfor %}
+</section>

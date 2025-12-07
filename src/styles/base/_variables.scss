@@ -1,0 +1,131 @@
+//Colors
+
+//Text-icon-elements
+$primary: rgba(13 13 21 /1);
+$Secondary: rgba(42 53 65 /0.85);
+$Secondary2: rgba(42 53 65 /0.7);
+$BaseIcon: rgba(39 53 68 /0.55);
+$Disabled: rgba(34 52 73 /0.4);
+$Primary-Invert: rgba(248 247 255 /1);
+$Secondary-Invert: rgba(239 245 250 /0.82);
+$Secondary2-Invert: rgba(231 238 247 /0.66);
+$BaseIcon-Invert: rgba(231 241 253 /0.49);
+$Disabled-Invert: rgba(229 236 251 /0.36);
+$Primary1: rgba(34, 34, 34, 1);
+
+//BG
+$Base: rgba(255 255 255 /1);
+$Alternative: rgba(248 250 252 /1);
+$Alternative2: rgba(244 247 250 /1);
+$Baseicon: rgba(13 13 21 /1);
+$Alternative-Invert: rgba(26 25 37 /1);
+$Alternative2-Invert: rgba(29 28 40 /1);
+
+//Elements
+$Accent-Link: rgba(2 101 220 /1);
+$Line: rgba(31 50 71 /0.27);
+$Seporator: rgba(41 77 117 /0.09);
+$SeporatorBold: rgba(29 54 83 /0.17);
+$Focus: rgba(56 146 243 /1);
+$Accent-Link-invert: rgba(120 187 250 /1);
+$Line-invert: rgba(212 217 242 /0.26);
+$Seporator-invert: rgba(191 197 238 /0.12);
+$SeporatorBold-invert: rgba(208 215 251 /0.17);
+$Focus-invert: rgba(150 206 253 /1);
+
+//StaticPallete/Marina
+$Marina1200: rgba(0 39 84 /1);
+$Marina1100: rgba(0 53 113 /1);
+$Marina1000: rgba(0 68 145 /1);
+$Marina900: rgba(0 84 182 /1);
+$Marina800: rgba(2 101 220 /1);
+$Marina880: rgba(15 115 246 /1);
+$Marina700: rgba(20 122 243 /1);
+$Marina600: rgba(56 146 243 /1);
+$Marina500: rgba(89 167 246 /1);
+$Marina400: rgba(120 187 250 /1);
+$Marina300: rgba(150 206 253 /1);
+$Marina200: rgba(181 222 255 /1);
+$Marina100: rgba(202 232 255 /1);
+$Marina50: rgba(224 242 255 /1);
+
+//CriticalityStatuses
+$neutral: rgba(137 144 153 /1);
+$negative: rgba(234 56 41 /1);
+
+//font familly
+$ff-heading: "Plus Jakarta Sans", sans-serif;
+$ff-body: "Libre Franklin", sans-serif;
+
+//font weight
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// Font Size
+$fz-xs: 14px;
+$fz-sm: 16px;
+$fz-md: 18px;
+$fz-m: 20px;
+$fz-ml: 24px;
+$fz-lg: 28px;
+$fz-xl: 36px;
+$fz-2xl: 52px;
+// Line Height
+$lh-sm: 20px;
+$lh-base: 24px;
+$lh-md: 26px;
+$lh-m: 28px;
+$lh-lg: 32px;
+$lh-ml: 36px;
+$lh-xl: 48px;
+$lh-2xl: 62px;
+
+//width
+$width107: 107px;
+
+//height
+$height24: 24px;
+
+// Gaps
+$gap-xxs: 4px;
+$gap-xs: 6px;
+$gap-sm: 8px;
+$gap-md: 12px;
+$gap-base: 16px;
+$gap-m: 18px;
+$gap-ml: 20px;
+$gap-lg: 24px;
+$gap-xl: 32px;
+$gap-2xl: 36px;
+$gap-3xl: 40px;
+$gap-4xl: 48px;
+$gap-5xl: 64px;
+$gap-6xl: 72px;
+
+// Spacing
+$space-0: 0;
+// Small sizes
+$space-xs: 4px;
+$space-s: 6px;
+$space-sm: 8px;
+$space-smd: 10px;
+// Primary sizes
+$space-md: 12px;
+$space-base: 16px;
+$space-ml: 18px;
+$space-m: 20px;
+$space-lg: 24px;
+$space-1lg: 28px;
+// Large sizes
+$space-xl: 32px;
+$space-1xl: 36px;
+$space-2xl: 40px;
+$space-3xl: 48px;
+$space-4xl: 64px;
+$space-5xl: 80px;
+$space-6xl: 120px;
+
+//letter spacing
+$ls-xs: -0.5px;

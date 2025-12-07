@@ -1,0 +1,28 @@
+<p class='product-plans__pricing'>{{ pricingPlans.heading }}</p>
+<h2 class='product-plans__title'>{{ pricingPlans.title }}</h2>
+
+<ul class='products-plans__list'>
+  <li class='products-plans__list-item'>
+    {% for plan in pricingPlans.plans %}
+      <article class='product-plans__card'>
+        {% if plan.label %}
+          <p class='product-plans__label'>{{ plan.label }}</p>
+        {% endif %}
+        <h3 class='product-plans__title'>{{ plan.name }}</h3>
+        <p class='product-plans__value'>
+          {{ plan.price }}
+          <span class='product-plans__discription'>{{ plan.period }}</span>
+        </p>
+        {% for feature in plan.features %}
+          <p class='product-plans__subs'>{{ feature }}</p>
+        {% endfor %}
+        <a
+          class='product__button button button--{{ plan.button.style }}'
+          href='{{ plan.button.url }}'
+        >
+          {{ plan.button.label }}
+        </a>
+      </article>
+    {% endfor %}
+  </li>
+</ul>

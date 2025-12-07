@@ -1,0 +1,41 @@
+@use "../base/variables.scss" as *;
+
+.blog {
+  &__category {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    color: $Marina880;
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    letter-spacing: $ls-xs;
+  }
+
+  &__subtitle {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    color: $Primary1;
+  }
+
+  &-card__title {
+    font-family: $ff-body;
+    font-weight: $fw-bold;
+    font-size: $fz-lg;
+    line-height: $lh-ml;
+  }
+
+  &-card__text {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+  }
+}

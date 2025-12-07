@@ -1,0 +1,16 @@
+<section class='catalog'>
+  <ul class='catalog__list'>
+    {% for item in catalogCategories %}
+      <li class='catalog__list-item'>
+        <article class='catalog-card'>
+          <img
+            class='catalog-card__image'
+            src='{{ item.image_src }}'
+            alt='{{ item.image_alt }}'
+          >
+          <p class='catalog-card__name'>{{ item.name }}</p>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

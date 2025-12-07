@@ -1,0 +1,10 @@
+@use "./base/variables.scss";
+
+//homepage
+@use "./layout/header.scss";
+@use "./layout/banner.scss";
+@use "./layout/catalog-section.scss";
+@use "./layout/blog-section.scss";
+@use "./layout/product-section.scss";
+@use "./layout/product-plans.scss";
+@use "./layout/faqs.scss";

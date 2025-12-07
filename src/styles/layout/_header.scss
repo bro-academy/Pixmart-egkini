@@ -1,0 +1,16 @@
+@use "../base/variables.scss" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-block: $space-lg;
+
+  &__navigation-link {
+    font-family: $ff-body;
+    font-weight: $fw-semibold;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+}

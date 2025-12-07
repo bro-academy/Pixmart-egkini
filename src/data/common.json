@@ -6,11 +6,26 @@
   "page": "index.html",
   "index": {
     "navigation": [
-      { "title": "About", "link": "#" },
-      { "title": "Products", "link": "#" },
-      { "title": "Creators", "link": "#" },
-      { "title": "Blog", "link": "#" },
-      { "title": "Contact", "link": "#" }
+      {
+        "name": "About",
+        "href": "index.html"
+      },
+      {
+        "name": "Products",
+        "href": ""
+      },
+      {
+        "name": "Creators",
+        "href": ""
+      },
+      {
+        "name": "Blog",
+        "href": ""
+      },
+      {
+        "name": "Contact",
+        "href": ""
+      }
     ]
   },
   "header": {
@@ -21,7 +36,7 @@
   },
 
   "headerSearch": {
-    "headerPlaceholder": "Search",
+    "headerPlaceholder": "Search For Digital Assets",
     "headerIcon": ""
   },
 

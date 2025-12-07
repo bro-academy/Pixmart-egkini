@@ -1,5 +1,209 @@
 {
-  "index": {
-    "title": "Hello World!"
+  "banner": {
+    "textFirst": "Craft Your Success with Our",
+    "highlight": "Digital",
+    "textSecond": "Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+    "primaryButton": {
+      "label": "Shop Now",
+      "url": "#"
+    },
+    "secondaryButton": {
+      "label": "Watch About Us",
+      "url": "#"
+    },
+    "image": {
+      "src": "#",
+      "alt": "image with product"
+    }
+  },
+  "catalogCategories": [
+    {
+      "image_src": "#",
+      "image_alt": "Computer screen",
+      "name": "UI Kits"
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Phone",
+      "name": "Social Media"
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Screen Board",
+      "name": "Presentation"
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Window with Text",
+      "name": "Fonts"
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Painting",
+      "name": "illustrations"
+    }
+  ],
+  "blogHighlights": [
+    {
+      "image_src": "#",
+      "image_alt": "Computer screen",
+      "title": "Templates",
+      "tags": ["For all needs", "Modern"]
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Slide",
+      "title": "Slides",
+      "tags": ["Pitch-ready", "Creative"]
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Phone",
+      "title": "App Icons",
+      "tags": ["High-quality", "Elegant"]
+    },
+    {
+      "image_src": "#",
+      "image_alt": "Painting",
+      "title": "Design Tools",
+      "tags": ["Easy to use", "Unique"]
+    }
+  ],
+  "blogIntro": {
+    "category": "Categories",
+    "title": "Discover Assets for Every Projects",
+    "subtitle": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+    "button": {
+      "label": "Shop Now",
+      "url": "#"
+    }
+  },
+  "catalogControls": {
+    "prev_icon_src": "#",
+    "prev_icon_alt": "previous arrow",
+    "next_icon_src": "#",
+    "next_icon_alt": "next arrow"
+  },
+  "trending": {
+    "label": "Trending",
+    "title": "Popular Products",
+    "items": [
+      {
+        "label": "Trophy",
+        "image_src": "#",
+        "image_alt": "Travel card",
+        "price": "$29.99",
+        "name": "Travel Hero",
+        "tags": ["Adventure", "Journey"]
+      },
+      {
+        "label": "Trophy",
+        "image_src": "#",
+        "image_alt": "Healthcare",
+        "price": "$15.99",
+        "name": "Healthcare Pro",
+        "tags": ["Medical", "Wellness"]
+      },
+      {
+        "image_src": "#",
+        "image_alt": "Foodish",
+        "price": "$31.99",
+        "name": "Foodish Delight",
+        "tags": ["Catering", "Food"]
+      },
+      {
+        "image_src": "#",
+        "image_alt": "Real Estate",
+        "price": "$40.99",
+        "name": "Real Estate",
+        "tags": ["Modern", "Homes"]
+      }
+    ]
+  },
+  "pricingPlans": {
+    "heading": "PRICING PLAN",
+    "title": "Choose The Perfect Plan for Creative Potential",
+    "plans": [
+      {
+        "name": "Standard Membership",
+        "price": "$14.99",
+        "period": "/month",
+        "features": [
+          "Enhanced Resource Access",
+          "Monthly Credits",
+          "Priority Customer Support",
+          "Community Features Access"
+        ],
+        "button": {
+          "label": "Subscribe",
+          "url": "#",
+          "style": "secondary"
+        }
+      },
+      {
+        "name": "Plus Membership",
+        "price": "$29.99",
+        "period": "/month",
+        "features": [
+          "All Standard Benefits",
+          "Increased Monthly Credits",
+          "Early Access to New Releases",
+          "Member-Only Offers"
+        ],
+        "label": "BEST SELLER",
+        "button": {
+          "label": "Subscribe",
+          "url": "#",
+          "style": "primary"
+        }
+      },
+      {
+        "name": "Pro Membership",
+        "price": "$49.99",
+        "period": "/month",
+        "features": [
+          "All Plus Benefits",
+          "Unlimited Downloads",
+          "Custom Licensing",
+          "Direct Creator Collaboration"
+        ],
+        "button": {
+          "label": "Subscribe",
+          "url": "#",
+          "style": "secondary"
+        }
+      }
+    ]
+  },
+  "faqs": {
+    "header": "F.A.Q",
+    "title": "Answers to Your Questions",
+    "cta": {
+      "label": "Ask Us A Question",
+      "url": "#"
+    },
+    "items": [
+      {
+        "question": "Can I request a refund?",
+        "answer": ""
+      },
+      {
+        "question": "How do I access my purchased products?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+      },
+      {
+        "question": "Are there any discounts for bulk purchases?",
+        "answer": ""
+      },
+      {
+        "question": "What payment methods do you accept here?",
+        "answer": ""
+      },
+      {
+        "question": "Can I sell my digital products on this marketplace?",
+        "answer": ""
+      }
+    ]
   }
 }

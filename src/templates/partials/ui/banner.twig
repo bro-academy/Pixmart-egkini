@@ -1,0 +1,23 @@
+<section class='banner'>
+  <h1 class='banner__section-title'>
+    {{ banner.textFirst }}
+    <span class='banner__section-brand'>{{ banner.highlight }}</span>
+    {{ banner.textSecond }}
+  </h1>
+  <p class='banner__section-description'>
+    {{ banner.description }}
+  </p>
+
+  <a class='banner__button button button--primary' href='{{ page.banner.primary_button.url }}'>
+    {{ banner.primaryButton.label }}
+  </a>
+  <a class='banner__button button button--secondary' href='{{ page.banner.secondary_button.url }}'>
+    {{ banner.secondaryButton.label }}
+  </a>
+
+  <img
+    class='banner__section-image'
+    src='{{ banner.image.src }}'
+    alt='{{ banner.image.alt }}'
+  >
+</section>

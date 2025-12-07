@@ -1,0 +1,36 @@
+@use "../base/variables.scss" as *;
+
+.product-plans {
+  &__pricing {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    text-align: center;
+    color: $Marina880;
+  }
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-xl;
+    line-height: $lh-ml;
+    letter-spacing: $ls-xs;
+    text-align: center;
+  }
+
+  &__value {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    letter-spacing: $ls-xs;
+  }
+
+  &__discription {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    color: $Baseicon;
+  }
+}

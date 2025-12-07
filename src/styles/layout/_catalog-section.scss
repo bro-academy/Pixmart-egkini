@@ -1,0 +1,11 @@
+@use "../base/variables.scss" as *;
+
+.catalog {
+  &-card__name {
+    font-family: $ff-heading;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-m;
+    text-align: center;
+  }
+}
