@@ -1,0 +1,53 @@
+<section class="blog">
+  <article class="blog-article">
+
+    <figure class="blog-article__figure">
+      <img class="blog-article__image" src="{{ main_image.src }}" alt="{{ main_image.alt }}" />
+
+      <img class="blog-article__author-icon" src="{{ author_icon.src }}" alt="{{ author_icon.alt }}" />
+
+      <address class="blog-article__author-info">
+        <p class="blog-article__author">{{ author.name }}</p>
+        <img class="blog-article__date-icon" src="{{ date_icon.src }}" alt="{{ date_icon.alt }}" />
+        <time class="blog-article__time" datetime="{{ author.date_datetime }}">
+          {{ author.date_text }}
+        </time>
+      </address>
+    </figure>
+
+    <p class="blog-article__text">
+      {{ intro_text }}
+    </p>
+
+    {% for item in content %}
+      <h3 class="blog-article__subtitle">{{ item.subtitle }}</h3>
+      <p class="blog-article__subtitle-text">{{ item.text }}</p>
+    {% endfor %}
+
+    <figure class="blog-article__picture">
+      <img class="blog-article__img" src="{{ example.image.src }}" alt="{{ example.image.alt }}" />
+    </figure>
+
+    <p class="blog-article__discription">
+      {{ example.description }}
+    </p>
+
+    <a class="blog-article__link" href="{{ example.link }}">
+      {{ example.link_text }}
+    </a>
+
+    {% for tip in additionalTips %}
+      <h3 class="blog-article__subtitle">{{ tip.subtitle }}</h3>
+      <p class="blog-article__subtitle-text">{{ tip.text }}</p>
+    {% endfor %}
+
+    <blockquote class="blog-article__quote">
+      {{ quote }}
+    </blockquote>
+
+    <p class="blog-article__subtitle-text">
+      {{ conclusion }}
+    </p>
+
+  </article>
+</section>

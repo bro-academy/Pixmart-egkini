@@ -1,0 +1,86 @@
+{
+  "main": {
+    "type": "contact",
+    "section": {
+      "title": "Get in Touch with Us",
+      "subtitle": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
+
+      "cta": {
+        "text": "Shop Now",
+        "link": "#",
+        "icon": {
+          "src": "#",
+          "alt": "Shopping icon"
+        }
+      },
+
+      "contactInfo": {
+        "phone": "+1 (555) 123-4567",
+        "email": "support@pixmart.com",
+        "availability": "Monday to Friday : 9 AM - 5 PM EST"
+      },
+
+      "location": {
+        "image": {
+          "src": "#",
+          "alt": "map"
+        },
+        "caption": {
+          "place": "PixMart HQ",
+          "address": "123 Creative Ave, Design City, 45678"
+        }
+      },
+
+      "form": {
+        "action": "#",
+        "method": "post",
+        "fields": [
+          {
+            "type": "text",
+            "name": "full-name",
+            "label": "Full Name",
+            "placeholder": "Amelia Robert Johnson",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email Address",
+            "placeholder": "amelia.robertjohnson@pixmart.com",
+            "required": true
+          },
+          {
+            "type": "select",
+            "name": "subject",
+            "label": "Subject",
+            "options": [
+              "General Inquiry"
+            ]
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": "Enter your message ..."
+          }
+        ],
+        "checkboxes": [
+          {
+            "name": "newsletter",
+            "label": "Subscribe me to Newsletter",
+            "checked": false
+          },
+          {
+            "name": "terms",
+            "label": "I have read the User & Privacy Policy",
+            "checked": true
+          }
+        ],
+        "submitButton": {
+          "type": "submit",
+          "text": "Send Message"
+        }
+      }
+    }
+  }
+}

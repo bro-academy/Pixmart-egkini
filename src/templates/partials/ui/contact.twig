@@ -1,0 +1,79 @@
+<main>
+  <section class="contact">
+
+    <h1>{{ section.title }}</h1>
+
+    <p>{{ section.subtitle }}</p>
+
+    <a href="{{ section.cta.link }}">
+      {{ section.cta.text }}
+      <img src="{{ section.cta.icon.src }}" alt="{{ section.cta.icon.alt }}">
+    </a>
+
+    <p>{{ section.contactInfo.phone }}</p>
+    <p>{{ section.contactInfo.email }}</p>
+    <p>{{ section.contactInfo.availability }}</p>
+
+    <figure>
+      <img src="{{ section.location.image.src }}" alt="{{ section.location.image.alt }}">
+      <figcaption>
+        <span>{{ section.location.caption.place }}</span>
+        {{ section.location.caption.address }}
+      </figcaption>
+    </figure>
+
+    <form action="{{ section.form.action }}" method="{{ section.form.method }}">
+
+      {% for field in section.form.fields %}
+        <div>
+
+          <label for="{{ field.name }}">{{ field.label }}</label>
+
+          {% if field.type == 'textarea' %}
+            <textarea
+              id="{{ field.name }}"
+              name="{{ field.name }}"
+              placeholder="{{ field.placeholder }}"
+            ></textarea>
+
+          {% elseif field.type == 'select' %}
+            <select id="{{ field.name }}" name="{{ field.name }}">
+              {% for option in field.options %}
+                <option>{{ option }}</option>
+              {% endfor %}
+            </select>
+
+          {% else %}
+            <input
+              id="{{ field.name }}"
+              type="{{ field.type }}"
+              name="{{ field.name }}"
+              placeholder="{{ field.placeholder }}"
+              {% if field.required %}required{% endif %}
+            />
+          {% endif %}
+
+        </div>
+      {% endfor %}
+
+      <div>
+        {% for checkbox in section.form.checkboxes %}
+          <label>
+            <input
+              type="checkbox"
+              name="{{ checkbox.name }}"
+              {% if checkbox.checked %}checked{% endif %}
+            />
+            <span>{{ checkbox.label }}</span>
+          </label>
+        {% endfor %}
+      </div>
+
+      <button type="{{ section.form.submitButton.type }}">
+        {{ section.form.submitButton.text }}
+      </button>
+
+    </form>
+
+  </section>
+</main>

@@ -1,0 +1,32 @@
+<aside class="aside-blog">
+
+  <h4 class="aside-blog__title">Categories</h4>
+  <nav class="aside-blog__navigation">
+    <ul class="aside-blog__list">
+      {% for category in categories %}
+        <li class="aside-blog__item">
+          <a class="aside-blog__link" href="{{ category.link }}">
+            {{ category.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <h4 class="aside-blog__title">Latest Articles</h4>
+  <nav class="aside-blog__navigation">
+    <ul class="aside-blog__list">
+      {% for article in latest_articles %}
+        <li class="aside-blog__item">
+          <a class="aside-blog__link" href="{{ article.link }}">
+            {{ article.title }}
+          </a>
+          <time class="blog-article__time" datetime="{{ article.datetime }}">
+            {{ article.date }}
+          </time>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</aside>
