@@ -1,0 +1,40 @@
+@use "../base/variables.scss" as *;
+
+.footer {
+  &__description {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    color: $Baseicon;
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-m;
+    line-height: $lh-md;
+  }
+
+  &-navigation__link {
+    color: $Secondary2-Invert;
+    background-color: $Baseicon;
+  }
+
+  &-navigation__list-item {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    color: $Secondary2;
+  }
+
+  &__copyrights-text {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    color: $Secondary2-Invert;
+    background-color: $Baseicon;
+  }
+}

@@ -30,14 +30,14 @@
   },
   "header": {
     "href": "index.html",
-    "logo_href": "",
+    "logo_href": "src/assets/sprite.svg#pixmart-logo-icon",
     "text": "Pixmart",
     "logo_alt": "Pixmart logo"
   },
 
   "headerSearch": {
     "headerPlaceholder": "Search For Digital Assets",
-    "headerIcon": ""
+    "headerIcon": "src/assets/sprite.svg#shoping-bag-icon"
   },
 
   "headerButtons": [
@@ -129,7 +129,7 @@
   "newsletter": {
     "title": "Subscribe to Design Newsletter",
     "form": {
-      "inputName": "search",
+      "inputName": "Enter your email address ...",
       "buttonText": "Subscribe",
       "buttonLink": "#"
     }

@@ -3,7 +3,18 @@
 .header {
   display: flex;
   align-items: center;
-  padding-block: $space-lg;
+  justify-content: space-between;
+
+  &__logo-image {
+    width: $width107;
+    height: $height21;
+    opacity: 1;
+    }
+
+    &__navigation-list{
+      display: flex;
+      
+    }
 
   &__navigation-link {
     font-family: $ff-body;
@@ -12,5 +23,15 @@
     line-height: $lh-m;
     vertical-align: middle;
     text-decoration: none;
+  }
+
+  &__search-bar {
+    width: $width240;
+    height: $height40;
+    padding: $space-smd $space-md;
+    opacity: 1;
+    border-radius: $brr-8;
+    border-width: $br-1;
+    color: $SeporatorBold;
   }
 }

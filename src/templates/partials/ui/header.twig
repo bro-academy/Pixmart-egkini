@@ -1,17 +1,17 @@
 <header class='header'>
   <a class='header__logo' href='{{ header.href }}'>
-    <img
-      class='header__logo-image'
-      src='{{ header.logo_href }}'
-      alt='{{ header.logo_alt }}'
-    >
+    <svg >
+      <use class='header__logo-image' href='{{ header.logo_href }}'></use>
+    </svg>
   </a>
-
+  
   {% include './nav.twig' %}
   {% include './header-search.twig' %}
   <div>
     <a class='header__button button' href='#'>
-      <img class='header__button-icon' src='#'>
+       <svg >
+      <use class='header__button-image' href='{{ headerSearch.headerIcon }}'></use>
+    </svg>
     </a>
   </div>
 </header>

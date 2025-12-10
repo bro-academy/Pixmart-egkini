@@ -1,0 +1,19 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.button {
+  @include button-base;
+
+  &--primary {
+    @include button-primary;
+    @include button-primary-style;
+  }
+  &--secondary {
+    @include button-secondary;
+    @include button-secondary-style;
+  }
+  &--tertiary {
+    @include button-tertiary;
+    @include button-secondary-style;
+  }
+}
