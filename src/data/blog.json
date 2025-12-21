@@ -3,6 +3,7 @@
     "sections": [
       {
         "type": "blog",
+        "text": "TYPOGRAPHY",
         "title": "Mastering the Art of Typography: Tips for Eye-Catching Designs for 2024"
       },
       {
@@ -61,12 +62,12 @@
     ],
     "aside": {
       "categories": [
-        "Graphic Design Trends",
-        "Typography & Fonts",
-        "UI/UX Design",
-        "Branding & Identity",
-        "Illustration",
-        "Digital Marketing"
+        { "title": "Graphic Design Trends", "link": "" },
+        { "title": "Typography & Fonts", "link": "" },
+        { "title": "UI/UX Design", "link": "" },
+        { "title": "Branding & Identity", "link": "" },
+        { "title": "Illustration", "link": "" },
+        { "title": "Digital Marketing", "link": "" }
       ],
       "latestArticles": [
         {

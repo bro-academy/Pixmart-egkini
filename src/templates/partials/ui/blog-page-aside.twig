@@ -3,7 +3,7 @@
   <h4 class="aside-blog__title">Categories</h4>
   <nav class="aside-blog__navigation">
     <ul class="aside-blog__list">
-      {% for category in categories %}
+      {% for category in main.aside.categories %}
         <li class="aside-blog__item">
           <a class="aside-blog__link" href="{{ category.link }}">
             {{ category.title }}
@@ -13,20 +13,23 @@
     </ul>
   </nav>
 
-  <h4 class="aside-blog__title">Latest Articles</h4>
-  <nav class="aside-blog__navigation">
-    <ul class="aside-blog__list">
-      {% for article in latest_articles %}
-        <li class="aside-blog__item">
-          <a class="aside-blog__link" href="{{ article.link }}">
-            {{ article.title }}
-          </a>
-          <time class="blog-article__time" datetime="{{ article.datetime }}">
-            {{ article.date }}
-          </time>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+   {# Latest Articles #}
+    {% if main.aside.latestArticles is defined %}
+      <div class="sidebar-block latest-articles">
+        <h3>Latest Articles</h3>
+        <ul>
+          {% for article in main.aside.latestArticles %}
+            <li>
+              <a href="#">
+                <span class="title">{{ article.title }}</span>
+                <time datetime="{{ article.datetime }}">
+                  {{ article.date }}
+                </time>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
 </aside>

@@ -1,5 +1,101 @@
-<section class="blog-banner">
-  <h1 class="blog-banner__title">
-    {{ title }}
-  </h1>
-</section>
+<main>
+
+  {% for section in main.sections %}
+
+  {% if section.text is defined %}
+          <span class="blog-label">
+            {{ section.text }}
+          </span>
+        {% endif %}
+
+    {# Blog Title Section #}
+    {% if section.type == 'blog' %}
+      <header class="blog-header">
+        <h1>{{ section.title }}</h1>
+      </header>
+    {% endif %}
+
+    {# Article Section #}
+    {% if section.type == 'section' %}
+      {% set article = section.article %}
+
+      <article class="blog-article">
+
+        {# Article Images #}
+        {% if article.images is defined %}
+          <div class="article-images">
+            {% for image in article.images %}
+              <img src="{{ image.src }}" alt="{{ image.alt }}">
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {# Author Info #}
+        <div class="author-info">
+          <span class="author">{{ article.authorInfo.author }}</span>
+          <time datetime="{{ article.authorInfo.date.datetime }}">
+            {{ article.authorInfo.date.text }}
+          </time>
+        </div>
+
+        {# Intro Text #}
+        <p class="intro-text">
+          {{ article.introText }}
+        </p>
+
+        {# Main Content #}
+        {% if article.content is defined %}
+          <div class="article-content">
+            {% for item in article.content %}
+              <section class="content-block">
+                <h2>{{ item.subtitle }}</h2>
+                <p>{{ item.text }}</p>
+              </section>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {# Image Example #}
+        {% if article.imageExample is defined %}
+          <figure class="image-example">
+            <img src="{{ article.imageExample.image.src }}"
+                 alt="{{ article.imageExample.image.alt }}">
+            <figcaption>
+              {{ article.imageExample.description }}
+              <a href="#">{{ article.imageExample.link }}</a>
+            </figcaption>
+          </figure>
+        {% endif %}
+
+        {# Additional Tips #}
+        {% if article.additionalTips is defined %}
+          <div class="additional-tips">
+            {% for tip in article.additionalTips %}
+              <section class="tip">
+                <h3>{{ tip.subtitle }}</h3>
+                <p>{{ tip.text }}</p>
+              </section>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {# Quote #}
+        {% if article.quote is defined %}
+          <blockquote class="article-quote">
+            {{ article.quote }}
+          </blockquote>
+        {% endif %}
+
+        {# Conclusion #}
+        {% if article.conclusion is defined %}
+          <footer class="article-conclusion">
+            <p>{{ article.conclusion }}</p>
+          </footer>
+        {% endif %}
+
+      </article>
+    {% endif %}
+
+  {% endfor %}
+
+</main>
